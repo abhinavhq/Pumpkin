@@ -2,5 +2,11 @@
 
 from .provider import AIProvider, MockAIProvider
 from .rag import RAGEngine
+from .grounded import GroundedAnswer
 
-__all__ = ['AIProvider', 'MockAIProvider', 'RAGEngine']
+__all__ = [
+    'AIProvider',
+    'MockAIProvider',
+    'RAGEngine',
+    'GroundedAnswer'
+]
