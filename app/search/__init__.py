@@ -1,5 +1,5 @@
-﻿"""Search module for snippet generation and search utilities"""
+﻿"""Search module for search modes"""
 
-from .snippet import SnippetGenerator
+from .modes import SearchModes, SearchMode
 
-__all__ = ['SnippetGenerator']
+__all__ = ['SearchModes', 'SearchMode']
