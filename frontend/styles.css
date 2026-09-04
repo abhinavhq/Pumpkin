@@ -355,3 +355,52 @@ body {
         padding: 12px 16px;
     }
 }
+/* Autocomplete */
+.autocomplete-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    margin-top: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.autocomplete-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.autocomplete-item:hover {
+    background: #1a1a2e;
+}
+
+.autocomplete-icon {
+    color: #555;
+    font-size: 14px;
+}
+
+.autocomplete-text {
+    flex: 1;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+.autocomplete-frequency {
+    color: #555;
+    font-size: 12px;
+}
+
+/* Search box needs relative positioning for autocomplete */
+.search-box {
+    position: relative;
+}

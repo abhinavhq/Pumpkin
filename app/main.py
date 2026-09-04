@@ -12,6 +12,8 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 
 from app.api.routes_search import router as search_router
+from app.api.routes_autocomplete import router as autocomplete_router
+from app.api.routes_related import router as related_router
 from app.api.routes_search import initialize_search_engine
 
 # Load environment variables
@@ -70,6 +72,8 @@ async def log_requests(request: Request, call_next):
 
 # --- Include Routers ---
 app.include_router(search_router, prefix="/api/v1")
+app.include_router(autocomplete_router, prefix="/api/v1")
+app.include_router(related_router, prefix="/api/v1")
 
 # --- Startup Event ---
 @app.on_event("startup")
@@ -91,6 +95,8 @@ async def root():
         "docs": "/docs",
         "health": "/health",
         "search": "/api/v1/search?q=python",
+        "autocomplete": "/api/v1/autocomplete?q=pyt",
+        "related": "/api/v1/related?q=python",
         "message": "Building a 10/10 search engine from scratch! 🚀"
     }
 
