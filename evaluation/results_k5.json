@@ -1,0 +1,26 @@
+{
+  "bm25": {
+    "precision@k": 0.28,
+    "recall@k": 0.9,
+    "mrr": 1.0,
+    "ndcg@k": 1.0,
+    "k": 5,
+    "total_queries": 5
+  },
+  "semantic": {
+    "precision@k": 0.28,
+    "recall@k": 0.9,
+    "mrr": 0.9,
+    "ndcg@k": 0.8774,
+    "k": 5,
+    "total_queries": 5
+  },
+  "hybrid": {
+    "precision@k": 0.28,
+    "recall@k": 0.9,
+    "mrr": 1.0,
+    "ndcg@k": 0.9226,
+    "k": 5,
+    "total_queries": 5
+  }
+}

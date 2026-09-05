@@ -1,0 +1,47 @@
+{
+  "queries": [
+    {
+      "id": "q1",
+      "query": "python programming",
+      "relevant_documents": [
+        1,
+        3,
+        4
+      ],
+      "description": "Python programming resources"
+    },
+    {
+      "id": "q2",
+      "query": "search engine",
+      "relevant_documents": [
+        2
+      ],
+      "description": "Search engine information"
+    },
+    {
+      "id": "q3",
+      "query": "web development",
+      "relevant_documents": [
+        3
+      ],
+      "description": "Web development resources"
+    },
+    {
+      "id": "q4",
+      "query": "data science",
+      "relevant_documents": [
+        4
+      ],
+      "description": "Data science resources"
+    },
+    {
+      "id": "q5",
+      "query": "machine learning",
+      "relevant_documents": [
+        4,
+        5
+      ],
+      "description": "Machine learning resources"
+    }
+  ]
+}
