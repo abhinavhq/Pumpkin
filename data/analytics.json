@@ -76,11 +76,46 @@
       "latency_ms": 0.060558319091796875,
       "mode": "web",
       "timestamp": "2026-09-05T16:28:44.391245"
+    },
+    {
+      "query": "python",
+      "results_count": 3,
+      "latency_ms": 0.06127357482910156,
+      "mode": "web",
+      "timestamp": "2026-09-05T16:33:58.525337"
+    },
+    {
+      "query": "python",
+      "results_count": 3,
+      "latency_ms": 0.040531158447265625,
+      "mode": "web",
+      "timestamp": "2026-09-05T16:34:17.693294"
+    },
+    {
+      "query": "what is python",
+      "results_count": 3,
+      "latency_ms": 0.04696846008300781,
+      "mode": "web",
+      "timestamp": "2026-09-05T16:34:18.941549"
+    },
+    {
+      "query": "python",
+      "results_count": 3,
+      "latency_ms": 0.05054473876953125,
+      "mode": "web",
+      "timestamp": "2026-09-05T16:34:20.165006"
+    },
+    {
+      "query": "python",
+      "results_count": 3,
+      "latency_ms": 0.04935264587402344,
+      "mode": "web",
+      "timestamp": "2026-09-05T16:34:23.416278"
     }
   ],
-  "total_searches": 11,
+  "total_searches": 16,
   "zero_result_searches": 2,
-  "total_latency": 99.56055831909181,
+  "total_latency": 99.80922889709474,
   "queries": {
     "python programming": 2,
     "web development": 2,
@@ -89,11 +124,12 @@
     "machine learning": 1,
     "artificial intelligence": 1,
     "unknown topic": 1,
-    "python": 1
+    "python": 5,
+    "what is python": 1
   },
   "daily_stats": {
     "2026-09-05": {
-      "searches": 11,
+      "searches": 16,
       "zero_results": 2
     }
   },
@@ -103,7 +139,7 @@
       "zero_results": 2
     },
     "2026-09-05 16:00": {
-      "searches": 1,
+      "searches": 6,
       "zero_results": 0
     }
   }
