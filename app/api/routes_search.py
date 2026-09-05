@@ -11,6 +11,7 @@ from pydantic import BaseModel
 from app.indexing.bm25 import BM25
 from app.database.database import Database
 from app.database.repositories import DocumentRepository
+from app.analytics.analytics import SearchAnalytics
 
 logger = logging.getLogger(__name__)
 
@@ -87,6 +88,18 @@ async def search(
     results = search_engine.get_top_documents(q, limit=limit)
     
     took = (time.time() - start_time) * 1000
+    
+    # Track analytics
+    try:
+        analytics = SearchAnalytics()
+        analytics.track_search(
+            query=q,
+            results_count=len(results),
+            latency_ms=took,
+            mode="web"
+        )
+    except Exception as e:
+        logger.warning(f"Failed to track analytics: {e}")
     
     return SearchResponse(
         query=q,
