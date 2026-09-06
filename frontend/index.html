@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Search Engine</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>🎃 Pumpkin - AI Search Engine</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
         <header class="header">
             <div class="logo">
-                <span class="logo-icon">🔍</span>
-                <span class="logo-text">AI Search</span>
+                <span class="logo-icon">🎃</span>
+                <span class="logo-text">Pumpkin</span>
+                <span class="logo-badge">AI Search</span>
             </div>
         </header>
 
-        <!-- Search Section -->
         <section class="search-section">
             <div class="search-container">
-                <h1 class="search-title">Search the Web with AI</h1>
+                <h1 class="search-title">Search with Pumpkin</h1>
+                <p class="search-subtitle">Your AI-powered search engine</p>
                 
                 <div class="mode-selector">
                     <button class="mode-btn active" data-mode="web">🌐 Web</button>
@@ -30,36 +30,37 @@
                 </div>
 
                 <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Ask anything..." autofocus>
-                    <button id="search-btn">Search</button>
+                    <input type="text" id="search-input" placeholder="Ask Pumpkin anything..." autofocus>
+                    <button id="search-btn">🎃 Search</button>
                 </div>
 
                 <div id="loading" class="loading hidden">
                     <div class="spinner"></div>
-                    <p>Searching...</p>
+                    <p>🎃 Pumpkin is thinking...</p>
                 </div>
             </div>
         </section>
 
-        <!-- Results Section -->
         <section id="results-section" class="results-section hidden">
             <div id="ai-answer" class="ai-answer hidden">
                 <div class="answer-header">
-                    <span class="answer-icon">🤖</span>
-                    <h3>AI Answer</h3>
+                    <span class="answer-icon">🎃</span>
+                    <h3>Pumpkin AI Answer</h3>
                 </div>
                 <div id="answer-content" class="answer-content"></div>
                 <div id="citations" class="citations"></div>
             </div>
 
             <div class="results-header">
-                <h3>Search Results</h3>
+                <h3>🎃 Search Results</h3>
                 <span id="result-count" class="result-count"></span>
             </div>
             <div id="results-list" class="results-list"></div>
+
+            <div id="related-searches" class="related-searches-container"></div>
         </section>
     </div>
 
-    <script src="app.js"></script>
+    <script src="/static/app.js"></script>
 </body>
 </html>

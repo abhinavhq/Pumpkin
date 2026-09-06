@@ -1,4 +1,4 @@
-﻿"""Security module for input validation, rate limiting, and protection"""
+"""Security module for input validation, rate limiting, and protection"""
 
 from .input_validator import InputValidator
 from .rate_limiter import RateLimiter

@@ -111,11 +111,256 @@
       "latency_ms": 0.04935264587402344,
       "mode": "web",
       "timestamp": "2026-09-05T16:34:23.416278"
+    },
+    {
+      "query": "python",
+      "results_count": 3,
+      "latency_ms": 0.09369850158691406,
+      "mode": "web",
+      "timestamp": "2026-09-06T13:27:59.934008"
+    },
+    {
+      "query": "python",
+      "results_count": 3,
+      "latency_ms": 0.04935264587402344,
+      "mode": "web",
+      "timestamp": "2026-09-06T13:28:38.155725"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.04601478576660156,
+      "mode": "web",
+      "timestamp": "2026-09-06T13:54:14.797530"
+    },
+    {
+      "query": "rat",
+      "results_count": 0,
+      "latency_ms": 0.024318695068359375,
+      "mode": "web",
+      "timestamp": "2026-09-06T13:54:29.934812"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.02574920654296875,
+      "mode": "web",
+      "timestamp": "2026-09-06T13:56:32.621183"
+    },
+    {
+      "query": "python",
+      "results_count": 3,
+      "latency_ms": 0.07677078247070312,
+      "mode": "web",
+      "timestamp": "2026-09-06T13:56:39.737054"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.03337860107421875,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:29.452536"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.029087066650390625,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:32.919892"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.023603439331054688,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:33.697268"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.024557113647460938,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:34.300664"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.024080276489257812,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:34.631983"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.02384185791015625,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:36.618604"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.03218650817871094,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:38.203538"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.021219253540039062,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:38.416551"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.021219253540039062,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:38.806885"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.02574920654296875,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:39.416289"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.024318695068359375,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:39.930889"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.02384185791015625,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:40.432515"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.023126602172851562,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:41.169015"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.023126602172851562,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:41.568080"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.14710426330566406,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:41.787261"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.02384185791015625,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:42.159300"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.023603439331054688,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:43.276389"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.03409385681152344,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:43.759625"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.029802322387695312,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:43.946604"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.024080276489257812,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:44.417122"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.03409385681152344,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:44.738278"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.02765655517578125,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:45.138707"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.025987625122070312,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:45.351551"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.024080276489257812,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:45.640027"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.026702880859375,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:45.815568"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.02765655517578125,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:46.258394"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.024080276489257812,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:47.010954"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.025033950805664062,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:47.233400"
+    },
+    {
+      "query": "pokemon",
+      "results_count": 0,
+      "latency_ms": 0.023603439331054688,
+      "mode": "web",
+      "timestamp": "2026-09-06T14:06:48.003923"
     }
   ],
-  "total_searches": 16,
-  "zero_result_searches": 2,
-  "total_latency": 99.80922889709474,
+  "total_searches": 51,
+  "zero_result_searches": 34,
+  "total_latency": 100.99989128112794,
   "queries": {
     "python programming": 2,
     "web development": 2,
@@ -124,13 +369,19 @@
     "machine learning": 1,
     "artificial intelligence": 1,
     "unknown topic": 1,
-    "python": 5,
-    "what is python": 1
+    "python": 8,
+    "what is python": 1,
+    "pokemon": 31,
+    "rat": 1
   },
   "daily_stats": {
     "2026-09-05": {
       "searches": 16,
       "zero_results": 2
+    },
+    "2026-09-06": {
+      "searches": 35,
+      "zero_results": 32
     }
   },
   "hourly_stats": {
@@ -141,6 +392,14 @@
     "2026-09-05 16:00": {
       "searches": 6,
       "zero_results": 0
+    },
+    "2026-09-06 13:00": {
+      "searches": 6,
+      "zero_results": 3
+    },
+    "2026-09-06 14:00": {
+      "searches": 29,
+      "zero_results": 29
     }
   }
 }

@@ -1,12 +1,13 @@
 """
-AI Search Engine - Main Application Entry Point
+Pumpkin - AI Search Engine
 """
 
 import logging
 import sys
 from datetime import datetime
 from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
@@ -15,6 +16,8 @@ from app.api.routes_search import router as search_router
 from app.api.routes_autocomplete import router as autocomplete_router
 from app.api.routes_related import router as related_router
 from app.api.routes_search import initialize_search_engine
+from app.security.rate_limiter import RateLimiter
+from app.security.input_validator import InputValidator
 
 # Load environment variables
 load_dotenv()
@@ -30,16 +33,16 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# Create FastAPI application instance
+# Create FastAPI application
 app = FastAPI(
-    title="AI Search Engine",
-    description="A 10/10 AI-powered search engine built from scratch",
+    title="Pumpkin - AI Search Engine",
+    description="A 10/10 AI-powered search engine built from scratch 🎃",
     version="0.1.0",
     docs_url="/docs",
     redoc_url="/redoc",
 )
 
-# Add CORS middleware
+# CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -47,6 +50,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# --- Security ---
+rate_limiter = RateLimiter(max_requests=60, time_window=60)
+input_validator = InputValidator()
+
+# --- Static Files ---
+app.mount("/static", StaticFiles(directory="frontend"), name="static")
 
 # --- Models ---
 class HealthResponse(BaseModel):
@@ -56,6 +66,28 @@ class HealthResponse(BaseModel):
     search_engine_ready: bool = False
 
 # --- Middleware ---
+@app.middleware("http")
+async def security_middleware(request: Request, call_next):
+    client_ip = request.client.host if request.client else "unknown"
+    if not rate_limiter.is_allowed(client_ip):
+        return JSONResponse(
+            status_code=429,
+            content={"detail": "Too many requests. Please try again later."}
+        )
+    
+    if request.query_params:
+        for key, value in request.query_params.items():
+            if key == "q":
+                sanitized = input_validator.sanitize_query(value)
+                if sanitized is None:
+                    return JSONResponse(
+                        status_code=400,
+                        content={"detail": "Invalid query parameter"}
+                    )
+    
+    response = await call_next(request)
+    return response
+
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     logger.info(f"Request: {request.method} {request.url.path}")
@@ -70,12 +102,12 @@ async def log_requests(request: Request, call_next):
             content={"detail": "Internal server error"}
         )
 
-# --- Include Routers ---
+# --- Routers ---
 app.include_router(search_router, prefix="/api/v1")
 app.include_router(autocomplete_router, prefix="/api/v1")
 app.include_router(related_router, prefix="/api/v1")
 
-# --- Startup Event ---
+# --- Startup ---
 @app.on_event("startup")
 async def startup_event():
     logger.info("Starting up...")
@@ -88,17 +120,7 @@ async def startup_event():
 # --- Endpoints ---
 @app.get("/")
 async def root():
-    return {
-        "name": "AI Search Engine",
-        "version": "0.1.0",
-        "status": "operational",
-        "docs": "/docs",
-        "health": "/health",
-        "search": "/api/v1/search?q=python",
-        "autocomplete": "/api/v1/autocomplete?q=pyt",
-        "related": "/api/v1/related?q=python",
-        "message": "Building a 10/10 search engine from scratch! 🚀"
-    }
+    return FileResponse("frontend/index.html")
 
 @app.get("/health", response_model=HealthResponse)
 async def health_check():
@@ -116,7 +138,6 @@ async def health_check():
         search_engine_ready=search_ready
     )
 
-# --- Development server entry point ---
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(

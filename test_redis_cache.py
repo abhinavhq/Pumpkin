@@ -1,4 +1,4 @@
-﻿"""
+"""
 Test script for Redis cache
 """
 
@@ -18,11 +18,13 @@ def test_cache():
     
     cache = RedisCache(ttl_seconds=10)
     
+    # Test set/get
     print("📝 Testing set/get...")
     cache.set("test_key", {"message": "Hello Redis!"})
     result = cache.get("test_key")
     print(f"   ✅ Retrieved: {result}")
     
+    # Test TTL
     print("\n⏱️ Testing TTL...")
     cache.set("ttl_test", "This will expire in 5 seconds")
     print(f"   ✅ Set TTL test (5 seconds)")
@@ -33,6 +35,7 @@ def test_cache():
     expired = cache.get("ttl_test")
     print(f"   ✅ TTL expired: {expired is None} (should be None)")
     
+    # Test stats
     stats = cache.get_stats()
     print(f"\n📊 Cache Stats:")
     print(f"   Hits: {stats['hits']}")
