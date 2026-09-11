@@ -53,7 +53,7 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 ## 📊 Database Stats
 
 | Metric | Value |
-|--------|-------|
+|--------|------|
 | **Articles Indexed** | 106 |
 | **Total Words** | 86,139 |
 | **Unique Terms** | 33+ |
