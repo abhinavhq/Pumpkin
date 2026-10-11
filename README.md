@@ -11,7 +11,7 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 
 ## 🌟 Features
 
-### 🎯 Core Search
+## 🎯 Core Search
 - ✅ **BM25 Ranking** - Industry-standard relevance scoring
 - ✅ **Semantic Search** - Vector embeddings for meaning-based search
 - ✅ **Hybrid Search** - Combines BM25 + Semantic for best results
