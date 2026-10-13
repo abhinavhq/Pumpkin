@@ -18,7 +18,7 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 - ✅ **Advanced Ranking** - Multi-signal ranking (title, headings, freshness)
 - ✅ **Snippet Generation** - Highlighted excerpts with context
 
-### 🤖 AI & RAG
+###🤖 AI & RAG
 - ✅ **AI / RAG** - AI-powered answers with real citations
 - ✅ **Grounded Answers** - Fact-checked, verified responses
 - ✅ **Real Citation System** - Clickable sources with previews
