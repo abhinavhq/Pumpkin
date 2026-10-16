@@ -5,7 +5,7 @@ Test script for performance optimization
 import logging
 from app.cache.cache import LRUCache, cached
 from app.performance.benchmark import Benchmark
-from app.retrieval.hybrid import HybridSearch
+from app.retrieval.hybrid import HybridSearchj
 
 logging.basicConfig(level=logging.INFO)
 
