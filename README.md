@@ -17,7 +17,7 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 - ✅ **Semantic Search** - Vector embeddings for meaning-based search
 - ✅ **Hybrid Search** - Combines BM25 + Semantic for best results
 - ✅ **Advanced Ranking** - Multi-signal ranking (title, headings, freshness)
-- ✅ **Snippet Generation** - Highlighted excerpts with context
+- ✅ **Snippet Generation** - Highlighted excerpts with contexdt
 
 ###🤖 AI & RAG
 - ✅ **AI / RAG** - AI-powered answers with real citations
