@@ -23,7 +23,7 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 - ✅ **AI / RAG** - AI-powered answers with real citations
 - ✅ **Grounded Answers** - Fact-checked, verified responses
 - ✅ **Real Citation System** - Clickable sources with previews
-- ✅ **AI Search Modes** - Web, AI, Research, Deep, Hybrid
+- ✅ **AI Search Modes** - Web, AI, Research, Deep, Hybrid 
 
 ### 🌐 Data & Crawling
 - ✅ **106+ Wikipedia Articles** - 86,139 words indexed
