@@ -37,6 +37,7 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 - ✅ **Autocomplete** - Real-time search suggestions
 - ✅ **Related Searches** - Discover related topics
 - ✅ **Responsive Design** - Works on all devices
+- 
 
 ### 🔒 Security & Performance
 - ✅ **Rate Limiting** - Prevent API abuse
