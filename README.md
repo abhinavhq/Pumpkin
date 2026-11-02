@@ -46,7 +46,7 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 - ✅ **Redis Caching** - Lightning-fast repeated queries
 - ✅ **Docker Support** - Containerized deployment
 
-### 📊 Analytics & Evaluation
+### 📊 Analytics & Evaluation 
 - ✅ **Search Analytics** - Track queries, latency, zero-result searches
 - ✅ **Evaluation Metrics** - Precision, Recall, MRR, NDCG
 
