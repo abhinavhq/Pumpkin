@@ -36,17 +36,17 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 - ✅ **Mode Selector** - Web/AI/Research/Deep/Hybrid
 - ✅ **Autocomplete** - Real-time search suggestions
 - ✅ **Related Searches** - Discover related topics
-- ✅ **Responsive Design** - Works on all devices
+- ✅ **Responsive Design** - Works on all devices 
 - 
 
-### 🔒 Security & Performance
+## 🔒 Security & Performance
 - ✅ **Rate Limiting** - Prevent API abuse
 - ✅ **SSRF Protection** - Block internal network access
 - ✅ **XSS Prevention** - Input sanitization
 - ✅ **Redis Caching** - Lightning-fast repeated queries
 - ✅ **Docker Support** - Containerized deployment
 
-### 📊 Analytics & Evaluation 
+## 📊 Analytics & Evaluation 
 - ✅ **Search Analytics** - Track queries, latency, zero-result searches
 - ✅ **Evaluation Metrics** - Precision, Recall, MRR, NDCG
 
