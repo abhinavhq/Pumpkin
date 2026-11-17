@@ -41,7 +41,7 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 
 ## 🔒 Security & Performance
 - ✅ **Rate Limiting** - Prevent API abuse
-- ✅ **SSRF Protection** - Block internal network access
+- ✅ **SSRF Protection** - Block internal network acces
 - ✅ **XSS Prevention** - Input sanitization
 - ✅ **Redis Caching** - Lightning-fast repeated queries
 - ✅ **Docker Support** - Containerized deployment
