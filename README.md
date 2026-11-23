@@ -9,7 +9,7 @@ A 10/10 AI-powered search engine built from scratch with Python, FastAPI, and mo
 
 ---
 
-## 🌟 Features
+## 🌟 Features 
 
 
 ## 🎯 Core Search 
